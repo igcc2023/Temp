@@ -1,0 +1,45 @@
+# Interactive graph
+
+Instructions:
+
+-   Select one of the top 10 causes of death in the United States from the slicer.
+
+-   The first map will show which estates have the highest death rate per 100,000 people.
+
+    -   For instance, 58 people died from Alzheimer's in Mississippi in 2020.
+
+-   The second map will show which estates have seen the most significant increase in this rate from 1999 to 2020.
+
+    -   If in 1999 1 person was dying from Cancer and in 2020 2 were dying because of Cancer, then the growth has been 100% in the death rate.
+
+Let's take for Example Alzheimer's Disease and concentrate on Missisipi.
+
+-   The bubble map tells us that Missisipi has the highest death rate due to Alzheimer in the United States: 58 deaths pero 100,000 people.
+
+-   Moreover, not only it has the highest death rate, but it has seen the largest growth since 1999 in this metric: 336% increase.
+
+-   Although not visible in this interactive chart, we provided an explanaition in the results section: race could explain the differences.
+
+```{=html}
+<style>
+  * {
+    font-family: sans-serif;
+  }
+</style>
+```
+::: {#slicer}
+:::
+
+::: {#plot style="width: 800; height: 500px;"}
+:::
+
+::: {#plot2 style="width: 800px; height: 500px;"}
+:::
+
+```{=html}
+<script src="plotly-2.27.0.min.js""></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+```
+```{=html}
+<script src="scripts/myscript.js"></script>
+```
